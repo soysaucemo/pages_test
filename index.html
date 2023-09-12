@@ -1,0 +1,17 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>随机跳转页面</title>  
+  <script>  
+    function randomRedirect() {  
+      var pages = ["page1.html", "page2.html", "page3.html", "page4.html"];  
+      var randomIndex = Math.floor(Math.random() * pages.length);  
+      window.location.href = pages[randomIndex];  
+    }  
+  </script>  
+</head>  
+<body onload="randomRedirect()">  
+  <h1>随机跳转页面</h1>  
+  <p>页面将在几秒后自动跳转到一个随机页面。</p>  
+</body>  
+</html>
